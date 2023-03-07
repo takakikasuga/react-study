@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  console.log('App is Rendering for react18');
+  useEffect(() => {
+    console.log('App is Rendering for react18 in useEffect');
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
